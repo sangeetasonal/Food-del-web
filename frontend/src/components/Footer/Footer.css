@@ -1,0 +1,68 @@
+.footer {
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 8vw; /* Increased top padding for better spacing */
+    margin-top: 100px;
+    position: relative; /* Ensure relative positioning for absolute elements */
+  }
+  
+  .footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px; /* Reduced the gap between columns for a tighter layout */
+  }
+  
+  .footer-content-left, .footer-content-right, .footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjusted alignment for better readability */
+    gap: 20px;
+  }
+  
+  .footer-content-left li, .footer-content-right li, .footer-content-center li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-content-right h2, .footer-content-center h2 {
+    color: #ffffff; /* White color for consistency */
+    font-size: 1.2rem; /* Adjusted font size */
+    margin-bottom: 10px; /* Added space below headings */
+  }
+  
+  .footer-social-icons img {
+    width: 30px; /* Slightly reduced social icon size */
+    margin-right: 10px; /* Reduced margin for closer alignment */
+    cursor: pointer; /* Added cursor pointer for better UX */
+  }
+  
+  .footer hr {
+    width: 100%;
+    height: 1px; /* Reduced height of the separator */
+    margin: 20px 0;
+    background-color: #757575; /* Darker grey color */
+    border: none;
+  }
+  
+  .footer-copyright {
+    color: #757575; /* Adjusted color for copyright text */
+    font-size: 0.9rem; /* Slightly reduced font size */
+    text-align: center; /* Center-align copyright text */
+    margin-bottom: 20px; /* Added bottom margin for separation */
+  }
+@media (max-width:750px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+}
